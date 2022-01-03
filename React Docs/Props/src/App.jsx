@@ -2,6 +2,7 @@ import { useState } from "react";
 import logo from "./logo.svg";
 import "./App.css";
 import Profile from "./Profile";
+import Article from "./Article";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -28,6 +29,9 @@ function App() {
         discovery="a method for measuring carbon dioxide in seawater"
         awards={["Miyake Prize for geochemistry", "Tanaka Prize"]}
       />
+      <hr />
+      <h2>My Favorite Person</h2>
+      <Article />
     </div>
   );
 }
