@@ -3,7 +3,7 @@ import Card from "./Card";
 export default function Article() {
   return (
     <div className="article">
-      <Card title="Photo">
+      <Card title="Bill Gates">
         <img
           className="avatar"
           src="https://i.imgur.com/25wA27j.jpeg"
