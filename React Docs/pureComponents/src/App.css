@@ -1,0 +1,31 @@
+.App {
+  padding-block: 1.5rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.avatar {
+  margin: 0.5em;
+  border-radius: 50%;
+}
+
+.panel {
+  border: 1px solid #aaa;
+  border-radius: 6px;
+  padding: 1rem;
+  width: 80%;
+  max-width: 300px;
+  margin: 1.5rem auto;
+}
+
+h1 {
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+.subheading {
+  font-size: 14px;
+  font-weight: normal;
+}
