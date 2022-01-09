@@ -1,0 +1,22 @@
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+img {
+  max-width: 170px;
+  display: block;
+  margin-top: 1rem;
+}
+
+p,
+.title {
+  max-width: 300px;
+  word-wrap: break-word;
+}
+
+button {
+  margin-right: 1rem;
+}
