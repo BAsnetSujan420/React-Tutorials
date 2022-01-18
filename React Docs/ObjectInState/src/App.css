@@ -1,0 +1,17 @@
+.App {
+  display: grid;
+  place-content: center;
+  padding-top: 3rem;
+}
+
+label {
+  margin-block: 10px;
+}
+
+input,
+button {
+  display: inline-block;
+  padding: 4px 10px;
+  font: inherit;
+  margin-left: 10px;
+}
