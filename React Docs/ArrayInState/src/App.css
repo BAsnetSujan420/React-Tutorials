@@ -1,0 +1,24 @@
+input {
+  display: inline-block;
+  padding: 0.4em;
+}
+
+button {
+  padding: 0.6em 1em;
+  background: steelblue;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  margin-left: 6px;
+}
+
+.addItem {
+  background-color: rebeccapurple;
+  margin-left: 1.5rem;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  margin-block: 1rem;
+}
