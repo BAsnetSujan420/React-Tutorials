@@ -1,0 +1,32 @@
+.App {
+  max-width: 600px;
+}
+
+label {
+  display: inline-block;
+  margin-block: 0.625rem;
+}
+
+button {
+  display: inline-block;
+  background-color: rebeccapurple;
+  color: #fff;
+  padding: 0.6em 1.5em;
+  border: none;
+  border-radius: 4px;
+  margin-top: 1rem;
+}
+
+input {
+  display: inline-block;
+  padding: 0.4em 1.5em;
+}
+
+span {
+  font-weight: 600;
+}
+
+.language {
+  font-weight: semibold;
+  font-size: 1.5rem;
+}
