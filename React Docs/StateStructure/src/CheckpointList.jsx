@@ -1,0 +1,30 @@
+import { useState } from "react";
+
+export default function CheckpointList({
+  checkpoints,
+  onChangeItem,
+  onDeleteItem,
+}) {
+  return (
+    <ul>
+      {checkpoints.map((item) => (
+        <li key={item.id}>
+          <label>
+            <input
+              type="checkbox"
+              checked={item.packed}
+              onChange={(e) => {
+                onChangeItem({
+                  ...item,
+                  packed: e.target.checked,
+                });
+              }}
+            />{" "}
+            {item.title}
+          </label>
+          <button onClick={() => onDeleteItem(item.id)}>Delete</button>
+        </li>
+      ))}
+    </ul>
+  );
+}
