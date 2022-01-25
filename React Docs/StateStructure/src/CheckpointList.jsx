@@ -12,17 +12,19 @@ export default function CheckpointList({
           <label>
             <input
               type="checkbox"
-              checked={item.packed}
+              checked={item.reached}
               onChange={(e) => {
                 onChangeItem({
                   ...item,
-                  packed: e.target.checked,
+                  reached: e.target.checked,
                 });
               }}
-            />{" "}
+            />
             {item.title}
           </label>
-          <button onClick={() => onDeleteItem(item.id)}>Delete</button>
+          <button className="delete-btn" onClick={() => onDeleteItem(item.id)}>
+            Delete
+          </button>
         </li>
       ))}
     </ul>

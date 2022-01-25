@@ -16,7 +16,7 @@ const Clock = () => {
   return (
     <div>
       <p>
-        Pick a color:
+        Change color: &nbsp;
         <select value={color} onChange={(e) => setColor(e.target.value)}>
           <option value="hotpink">lightcoral</option>
           <option value="midnightblue">midnightblue</option>
@@ -24,6 +24,7 @@ const Clock = () => {
         </select>
       </p>
       <h3 style={{ color: color }}>{time.toLocaleTimeString()}</h3>
+      <hr />
     </div>
   );
 };

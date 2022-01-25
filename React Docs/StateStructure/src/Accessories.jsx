@@ -22,23 +22,30 @@ export default function Accessories() {
     <>
       <ul>
         {items.map((item) => {
-          <li className="">
-            <label>
-              <input
-                type="checkbox"
-                checked={true}
-                onChange={() => {
-                  onToggle(item.id);
-                }}
-              />
-              {item.name}
-            </label>
-          </li>;
+          const isSelected = selectedIds.includes(item.id);
+          return (
+            <li className={isSelected ? "selelcted" : ""}>
+              <label>
+                <input
+                  type="checkbox"
+                  checked={isSelected}
+                  onChange={() => {
+                    handleToggle(item.id);
+                  }}
+                />
+                {item.name}
+              </label>
+            </li>
+          );
         })}
-        <hr />
         <p>
-          <b>{selectedCount} items are ready</b>
+          {selectedCount === 3 ? (
+            <p className="ready-for-trail">All things ready. Lets start!!!</p>
+          ) : (
+            <b>{selectedCount} items are ready</b>
+          )}
         </p>
+        <hr />
       </ul>
     </>
   );

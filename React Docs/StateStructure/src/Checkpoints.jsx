@@ -4,9 +4,9 @@ import CheckpointList from "./CheckpointList";
 
 let nextId = 3;
 const initialCheckpoints = [
-  { id: 0, title: "Running shoes", reached: true },
-  { id: 1, title: "Smart watch", reached: false },
-  { id: 2, title: "Awesome outfit", reached: false },
+  { id: 0, title: "Dulal Tole", reached: true },
+  { id: 1, title: "Jamchen Vijaya Stupa", reached: false },
+  { id: 2, title: "Nagi Gumba", reached: false },
 ];
 
 export default function Checkpoints() {
@@ -45,7 +45,8 @@ export default function Checkpoints() {
   }
 
   function handleDeleteItem(itemId) {
-    setTotal(total - 1);
+    setTotal((total) => total - 1);
+    setReached((reached) => reached - 1);
     setItems(items.filter((item) => item.id !== itemId));
   }
 
@@ -58,9 +59,13 @@ export default function Checkpoints() {
         onDeleteItem={handleDeleteItem}
       />
       <hr />
-      <b>
-        {reached} out of {total} reached!
-      </b>
+      <p className="ready-for-trail">
+        {reached === total ? (
+          <p>Bravo 👏👏👏. Great running !!!</p>
+        ) : (
+          `${reached} out of ${total} reached!`
+        )}
+      </p>
     </>
   );
 }
