@@ -1,0 +1,64 @@
+.App {
+  width: 70%;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  padding: 1.4rem;
+}
+
+.imgBox {
+  width: 250px;
+  height: 250px;
+}
+
+img {
+  max-width: 100%;
+  object-fit: cover;
+}
+
+ul {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+}
+
+ul {
+  padding: 0;
+}
+
+li > button {
+  display: inline-block;
+  padding: 0.5em 1rem;
+}
+button,
+input {
+  display: inline-block;
+  padding: 0.2em 0.8rem;
+  margin-right: 10px;
+}
+
+.contact-container {
+  padding: 2rem 1rem;
+}
+
+label {
+  display: block;
+  margin-block: 0.625rem;
+}
+
+.change-btn button {
+  background-color: rgb(240, 111, 64);
+  color: #fff;
+  outline: none;
+  border: none;
+  padding: 0.6em 1rem;
+  border-radius: 4px;
+}
+
+.change-btn button:hover {
+  background-color: coral;
+}
