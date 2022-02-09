@@ -1,0 +1,17 @@
+.App {
+  margin-top: 5rem;
+}
+
+input,
+button {
+  display: inline-block;
+  padding: 0.4em 1em;
+  margin-inline-end: 0.5rem;
+  margin-inline-start: 0.5rem;
+  margin-block: 10px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
